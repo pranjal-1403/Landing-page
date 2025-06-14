@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VISTA CLIK Landing Page Preview</title>
+<!-- Import Inter font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+<style>
+  /* Reset and base styling */
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #4A90E2, #9013FE);
+    color: white;
+  }
+  #root {
+    min-height: 100vh;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.08em;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    max-width: 480px;
+    margin: 0 auto 24px auto;
+  }
+  button {
+    background: rgba(255 255 255 / 0.17);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 16px 48px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover, button:focus {
+    background: rgba(255 255 255 / 0.33);
+    outline: none;
+  }
+  section.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 960px;
+    width: 100%;
+  }
+  section.gallery img {
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    flex: 1 0 280px;
+    max-width: 320px;
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+  }
+  section.contact {
+    background: rgba(255 255 255 / 0.15);
+    backdrop-filter: blur(12px);
+    padding: 24px 32px;
+    border-radius: 16px;
+    max-width: 480px;
+    width: 100%;
+  }
+  section.contact h3 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+  }
+  section.contact p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      max-width: 320px;
+    }
+    section.gallery img {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+    section.contact {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- React & ReactDOM CDN -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Babel standalone for JSX transpilation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+const VistaClikLanding = () => {
+  const photos = [
+    { src: 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ce7aba32-688c-47cf-b0ca-2bebbc266487.png', alt: 'Elegant wedding ceremony outdoor with floral decorations and bride in white dress' },
+    { src: 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d7fd5a2d-6af0-4c1c-9acb-5e06d421111f.png', alt: 'Romantic couple portrait at sunset with soft golden light and wedding attire' },
+    { src: 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/75fd67ef-22df-46c7-b145-f1ae5a42a621.png', alt: 'Bride and groom dancing at the wedding reception with guests applauding' }
+  ];
+
+  return (
+    <>
+      <h1>VISTA CLIK</h1>
+      <h2>Capturing Moments, Crafting Memories — Your Vision, Our Lens</h2>
+      <button onClick={() => alert('Thank you for choosing VISTA CLIK! We will contact you soon.')}>
+        Book Your Session
+      </button>
+      <section className="gallery" aria-label="Wedding Photography Gallery">
+        {photos.map(({ src, alt }, i) => (
+          <img key={i} src={src} alt={alt} loading="lazy" width={320} height={213} />
+        ))}
+      </section>
+      <section className="contact" aria-label="Contact Information">
+        <h3>Contact Us</h3>
+        <p><strong>Phone:</strong> 6386 782 681, 7311157529</p>
+        <p><strong>Email:</strong> <a href="mailto:Vistaclik@gmail.com" style={{color: 'white', textDecoration: 'underline'}}>Vistaclik@gmail.com</a></p>
+      </section>
+    </>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<VistaClikLanding />);
+
+</script>
+</body>
+</html>
