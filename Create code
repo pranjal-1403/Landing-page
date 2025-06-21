@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksha Bandhan 2025 Special - Photography Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0; /* Light cream background */
+            color: #333;
+        }
+        header {
+            background: url('https://example.com/raksha-bandhan-background.jpg') no-repeat center center/cover; /* Raksha Bandhan background */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #4a2c2c; /* Darker text color */
+        }
+        h1 {
+            font-family: 'Playfair Display', serif; /* Dramatic font */
+            font-size: 4rem; /* Increased size */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        }
+        h2 {
+            font-family: 'Playfair Display', serif; /* Dramatic font */
+            font-size: 2.5rem; /* Increased size */
+            margin: 20px 0;
+            color: #ff6f61; /* Coral color for headings */
+        }
+        .cta {
+            font-size: 2rem;
+            margin: 20px 0;
+            background-color: #ff6f61; /* Coral color for CTA */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta:hover {
+            background-color: #e65c50; /* Darker coral on hover */
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .problem-solution {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .faq {
+            margin-bottom: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a2c2c; /* Darker footer color */
+            color: white;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            max-width: 400px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #ff6f61; /* Coral color for button */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #e65c50; /* Darker coral on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gift Everlasting Memories This Rakhi</h1>
+    <p style="font-size: 1.5rem; font-weight: 600;">Flat 50% Off!</p>
+    <a href="#form" class="cta">Secure Her Dream Wedding Shoot</a>
+</header>
+
+<section>
+    <div class="problem-solution">
+        <h2>Finding the Perfect Gift?</h2>
+        <p>Struggling to find a unique and meaningful gift for your sister's big day? Our wedding photography packages are the ultimate solution, capturing the love and joy of her special moments.</p>
+    </div>
+
+    <h2>What You Get</h2>
+    <ul>
+        <li>Candid Shots</li>
+        <li>Traditional Photography</li>
+        <li>Pre-Wedding Shoots</li>
+        <li>Beautifully Crafted Albums</li>
+        <li>Videography Options</li>
+    </ul>
+
+    <div class="problem-solution">
+        <h2>Why This Offer is Special</h2>
+        <p>Enjoy a significant saving of 50% on all wedding photography packages when you book for your sister. This limited-time Rakhi offer is your chance to invest in lifelong memories!</p>
+    </div>
+
+    <h2>FAQs</h2>
+    <div class="faq">
+        <p><strong>Is it transferable?</strong> Yes, the offer can be transferred to another family member.</p>
+        <p><strong>What if the wedding date isn't set?</strong> You can book now and choose a date later.</p>
+        <p><strong>How long is the offer valid?</strong> The offer is valid until the end of Raksha Bandhan 2025.</p>
+    </div>
+
+    <h2>Book Now</h2>
+    <div class="form-container" id="form">
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <input type="date" placeholder="Wedding Date (Tentative)" required>
+            <button type="submit">Claim My Offer</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Photography Studio Name</p>
+    <p>Contact: info@photographystudio.com | Phone: (123) 456-7890</p>
+    <p>Follow us on: 
+        <a href="#" style="color: white;">Facebook</a>, 
+        <a href="#" style="color: white;">Instagram</a>
+    </p>
+</footer>
+
+</body>
+</html>
